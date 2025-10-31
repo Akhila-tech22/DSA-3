@@ -54,7 +54,7 @@ class BST {
     } 
     findMax(node = this.root) {
         if(!node.right) return node.data;
-        return this.findMax(node.right) // note the point : through recurion , change internal varibles in a code then not want return . but if not have that , only depand on recusion , in there we need return and && (have two)
+        return this.findMax(node.right) // note the point : Recursion modifies outer variable, no return needed
     }
 }
 
