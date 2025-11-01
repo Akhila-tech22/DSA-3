@@ -29,7 +29,7 @@ class Trie {
         }
     }
     
-   search(word) {
+   auto(word) {
        let node = this.root;
         for(const char of word) {
             if(!node.child[char]) return [];
@@ -54,4 +54,4 @@ const t = new Trie()
 t.insert("cat")
 t.insert("car")
 t.insert("caatingg")
-console.log(t.search("d"))
+console.log(t.auto("d"))
